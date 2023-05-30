@@ -1,0 +1,47 @@
+.container {
+  padding: 10px;
+  margin: auto;
+  width: 50%;
+  text-align: center;
+
+  img {
+    width: 12rem;
+    height: auto;
+  }
+
+  h3 {
+    text-align: left;
+    margin: 5px;
+  }
+
+  .create-monster-container {
+    border: 1px solid rgba($color: #d3d3d3, $alpha: 0.5);
+  }
+
+  form {
+    width: 100%;
+    text-align: center;
+
+    div:nth-child(1),
+    div:nth-child(2),
+    div:nth-child(5) {
+      display: block;
+      margin: 10px 0;
+      text-align: center;
+    }
+
+    div:nth-child(3),
+    div:nth-child(4) {
+      padding: 0 10px;
+      margin: 10px 0;
+      display: inline-block;
+    }
+
+    .selector-width {
+      width: 220px;
+    }
+  }
+  .new-monster-container {
+    border: 1px solid rgba($color: #d3d3d3, $alpha: 0.5);
+  }
+}
