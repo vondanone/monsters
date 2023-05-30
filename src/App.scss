@@ -16,22 +16,42 @@
     margin: 5px;
   }
 
+  .create-monster-container {
+    .atk-def-images {
+      width: 25px;
+      height: auto;
+      margin-bottom: -8px;
+      margin-right: 4px;
+    }
+  }
+
   form {
     width: 100%;
     text-align: center;
 
+    input,
+    select,
+    button {
+      cursor: pointer;
+    }
+
+    input:focus,
+    select:focus,
+    button:focus {
+      outline: 1px solid black;
+      padding: 3px;
+    }
     div:nth-child(1),
-    div:nth-child(2),
     div:nth-child(5) {
       display: block;
-      margin: 10px 0;
       text-align: center;
     }
 
     div:nth-child(3),
     div:nth-child(4) {
       padding: 0 10px;
-      margin: 10px 0;
+      margin-top: 15px;
+
       display: inline-block;
     }
 
@@ -39,6 +59,18 @@
       width: 220px;
       margin: 0;
       padding: 0;
+    }
+    button {
+      margin-top: 15px;
+    }
+  }
+
+  .element-images {
+    margin-top: 15px;
+    img {
+      width: 45px;
+      height: auto;
+      padding: 0 5px;
     }
   }
 

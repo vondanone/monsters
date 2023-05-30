@@ -82,13 +82,35 @@ const App = () => {
                 type="text"
                 value={name}
                 onChange={handleNameChange}
-                placeholder="Name"
+                placeholder="Add your monster name here"
                 className="selector-width"
                 required
               />
             </label>
           </div>
           <div>
+            <div className="element-images">
+              <img
+                src={fireImage}
+                className="fire-image"
+                alt="fire element image"
+              />
+              <img
+                src={waterImage}
+                className="water-image"
+                alt="water element image"
+              />
+              <img
+                src={earthImage}
+                className="earth-image"
+                alt="earth element image"
+              />
+              <img
+                src={airImage}
+                className="air-image"
+                alt="air element image"
+              />
+            </div>
             <label>
               <select
                 value={element}
@@ -106,7 +128,13 @@ const App = () => {
           </div>
           <div>
             <label>
-              Attack:
+              <img
+                src={attackImage}
+                className="atk-def-images"
+                alt="attack-image"
+                width={16}
+                height={16}
+              />
               <input
                 type="number"
                 value={attack}
@@ -119,7 +147,13 @@ const App = () => {
           </div>
           <div>
             <label>
-              Defense:
+              <img
+                src={defenseImage}
+                className="atk-def-images"
+                alt="defense-image"
+                width={16}
+                height={16}
+              />
               <input
                 type="number"
                 value={defense}
@@ -133,19 +167,22 @@ const App = () => {
           <div>
             <button type="submit">Add Monster</button>
           </div>
-
+          <br />
+          <br />
+          <br />
           <div>
             <label>
-              Search:
               <input
                 type="text"
                 value={searchTerm}
                 onChange={handleNameSearchChange}
                 className="selector-width"
-                placeholder="Search by name"
+                placeholder="Search monsters by name"
+                width="200"
               />
             </label>
           </div>
+          <br />
         </form>
       </div>
 
@@ -164,19 +201,11 @@ const App = () => {
               <br />
               <div>
                 <span>
-                  <img
-                    src={attackImage}
-                    className="atk-def-images"
-                    alt="attack-image"
-                  />
+                  <img src={attackImage} alt="attack-image" />
                   {monster.attack}
                 </span>
                 <span>
-                  <img
-                    src={defenseImage}
-                    className="atk-def-images"
-                    alt="defense-image"
-                  />
+                  <img src={defenseImage} alt="defense-image" />
                   {monster.defense}
                 </span>
               </div>
