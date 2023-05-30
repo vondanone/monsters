@@ -3,8 +3,10 @@
   margin: auto;
   width: 50%;
   text-align: center;
+  border: 1px solid rgba($color: #d3d3d3, $alpha: 0.5);
+  min-height: 600px;
 
-  img {
+  img:nth-child(1) {
     width: 12rem;
     height: auto;
   }
@@ -12,10 +14,6 @@
   h3 {
     text-align: left;
     margin: 5px;
-  }
-
-  .create-monster-container {
-    border: 1px solid rgba($color: #d3d3d3, $alpha: 0.5);
   }
 
   form {
@@ -39,9 +37,41 @@
 
     .selector-width {
       width: 220px;
+      margin: 0;
+      padding: 0;
     }
   }
-  .new-monster-container {
+
+  .new-monster-container-element {
     border: 1px solid rgba($color: #d3d3d3, $alpha: 0.5);
+    display: grid;
+    grid-template-columns: 15% 75% 10%;
+    gap: none;
+    text-align: left;
+    padding: 10px;
+    margin-bottom: 5px;
+
+    img {
+      width: 60px;
+      height: auto;
+      margin-left: 20%;
+    }
+    .new-monster-info {
+      margin-top: 1%;
+      margin-left: 2%;
+
+      div {
+        margin-top: 5px;
+        img {
+          width: 18px;
+          height: auto;
+          margin-right: 5px;
+          margin-left: 0;
+        }
+        span {
+          margin-right: 10px;
+        }
+      }
+    }
   }
 }
